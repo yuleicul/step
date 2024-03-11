@@ -2,7 +2,9 @@
 
 ## 2024-03-01 Signal <Tag value="1 h" />
 
-Components:
+[Components • Angular](https://angular.dev/guide/components)
+
+::: details
 
 - [Accepting data with input properties](https://angular.dev/guide/components/inputs)
 - [Custom events with outputs](https://angular.dev/guide/components/outputs)
@@ -14,7 +16,11 @@ Components:
   - During initialization: `constructor` -change detection-> `ngOnChanges` -> `ngOnInt` -> `ngDoCheck` -> `ngAfterXxxInit` -> `ngAfterXxxChecked` -rendering-> `afterRender`
   - Subsequent updates: change detection `ngOnChanges` -> `ngDoCheck` -> `ngAfterXxxChecked` -rendering-> `afterRender`
 
-Feature preview:
+:::
+
+[Feature preview - Developer guides](https://angular.io/guide/signals)
+
+::: details
 
 - [Signal](https://angular.io/guide/signals)
   - Writable and computed signals
@@ -24,7 +30,13 @@ Feature preview:
   - Alias
 - [Model inputs](https://angular.io/guide/model-inputs)
 
+:::
+
 ## 2024-02-28 Components <Tag value="0.5 h" />
+
+[Components • Angular](https://angular.dev/guide/components)
+
+::: details
 
 - [Anatomy of components](https://angular.dev/guide/components)
 - [Importing and using components](https://angular.dev/guide/components/importing)
@@ -37,9 +49,13 @@ Feature preview:
   - `ViewEncapsulation.ShadowDom`: scoped, and global styles cannot affect
   - `ViewEncapsulation.None`: global
 
+:::
+
 ## 2024-02-27 v17 Tutorial <Tag value="1.5 h" />
 
-[Beta Docs for v17](https://angular.dev/tutorials/learn-angular)
+[Interactive tutorial for v17](https://angular.dev/tutorials/learn-angular)
+
+::: details
 
 - Composing Components
   - `imports` and `selector`
@@ -71,9 +87,13 @@ Feature preview:
   - Built-in pipes: `DatePipe`, `DecimalPipe`, `CurrencyPipe`, ...
   - Custom pipes with`@Pipe`
 
-## 2024-02-26 Homes Tutorial <Tag value="2.5 h" />
+:::
+
+## 2024-02-26 Homes tutorial <Tag value="2.5 h" />
 
 [First App Tutorial - Angular Homes](https://angular.io/tutorial/first-app)
+
+::: details
 
 - Component
   - Metadata
@@ -91,3 +111,5 @@ Feature preview:
   - `<router-outlet>`
 - ReactiveFormsModule
 - HTTP communication
+
+:::

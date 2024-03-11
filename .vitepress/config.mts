@@ -16,12 +16,20 @@ export default defineConfig({
         text: "Coding",
         items: [
           {
+            text: "JavaScript",
+            link: "/content/javascript",
+          },
+          {
             text: "React",
             link: "/content/react",
           },
           {
             text: "Svelte",
             link: "/content/svelte",
+          },
+          {
+            text: "Fastify",
+            link: "/content/fastify",
           },
           {
             text: "Angular",
@@ -39,6 +47,10 @@ export default defineConfig({
           {
             text: "English",
             link: "/content/english",
+          },
+          {
+            text: "Cantonese",
+            link: "/content/cantonese",
           },
         ],
       },
