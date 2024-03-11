@@ -4,6 +4,10 @@
 Currently reading _Fluent React_ by Tejas Kumar.
 :::
 
+::: To learn
+[The Two Reacts — overreacted](https://overreacted.io/the-two-reacts/)
+:::
+
 ## Before <Tag value='62 h' />
 
 My React journey started in July 2020. There're some special times spent:
