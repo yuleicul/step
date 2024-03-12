@@ -4,8 +4,11 @@
 Currently reading _Fluent React_ by Tejas Kumar.
 :::
 
-::: To learn
-[The Two Reacts — overreacted](https://overreacted.io/the-two-reacts/)
+::: details To learn
+
+- [The Two Reacts — overreacted](https://overreacted.io/the-two-reacts/)
+- [Patterns.dev](https://www.patterns.dev/)
+
 :::
 
 ## Before <Tag value='62 h' />
