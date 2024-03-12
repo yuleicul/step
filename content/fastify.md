@@ -1,9 +1,7 @@
-# Fastify <Tag variant='total' value="5.5 h" />
+# Fastify <Tag variant='total' value="6.5 h" />
 
 ::: details To learn
 
-- Review [JWT](https://jwt.io)
-- Continue watching [1, 2, 3... Fastify! - Matteo Collina - YouTube](https://www.youtube.com/watch?v=-X84Cq-nsLw)
 - _read [here](https://fastify.dev/docs/latest/Reference/Plugins/#handle-the-scope) to understand how to handle the scope of a plugin_
 - [the hitchhiker's guide to plugins](https://fastify.dev/docs/latest/Guides/Plugins-Guide/)
 - [JSON Schema](https://json-schema.org/)
@@ -18,6 +16,26 @@
 - Rebuild blurcasts' backend with fastify
 
 :::
+
+## 2024-03-13 The hitchhiker's guide to plugins (WIP)
+
+[The hitchhiker's guide to plugins](https://fastify.dev/docs/latest/Guides/Plugins-Guide/)
+
+- "Every time you use the `register` API, a new context is created which avoids the negative situations mentioned above."
+
+## 2024-03-12 JWT <Tag value="1 h" />
+
+[JSON Web Token Introduction - jwt.io](https://jwt.io/introduction)
+
+- [IANA JSON Web Token Registry](https://www.iana.org/assignments/jwt/jwt.xhtml)
+
+- "Do note that for signed tokens this information, though protected against tampering, is readable by anyone. Do not put secret information in the payload or header elements of a JWT unless it is encrypted."
+
+- "If the token is sent in the Authorization header, Cross-Origin Resource Sharing (CORS) won't be an issue as it doesn't use cookies."
+
+[How to Sign and Validate JSON Web Tokens – JWT Tutorial](https://www.freecodecamp.org/news/how-to-sign-and-validate-json-web-tokens/)
+
+- "When your authentication server receives an incoming JWT, it uses the incoming JWT's header and payload segments and the shared private key to generate a signature. If the signature matches, then your application knows that the incoming JWT can be trusted."
 
 ## 2024-03-07 Encapsulation and breaking it <Tag value="2 h" />
 

@@ -16,7 +16,7 @@ Currently reading _Understand ES6_
 
 :::
 
-## IEEE 754 <Tag value="2 h" />
+## 2024-03-11 IEEE 754 <Tag value="2 h" />
 
 [Bartek Szopka: Everything you never wanted to know about JavaScript numbers - JSConf EU 2013 - YouTube](https://www.youtube.com/watch?v=MqHDDtVYJRI)
 
