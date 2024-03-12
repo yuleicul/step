@@ -1,18 +1,30 @@
-# JavaScript <Tag variant='total' value='> 100 h' />
+# JavaScript <Tag variant='total' value='122 h' />
 
 ::: info
 
-Currently learning IEEE 754
+Currently reading _Understand ES6_
 
 :::
 
-## 2023 WIP
+::: details To do
 
-Just JavaScript - Dan Abramov
+- visualization page of [BFE.dev - prepare for Front-End job interviews.](https://bigfrontend.dev/)
 
-visualization of [BFE.dev - prepare for Front-End job interviews.](https://bigfrontend.dev/)
+- Copy presentation of IEEE 754
 
-Understand ES6
+- Book recommendation - Just JavaScript
+
+:::
+
+## IEEE 754 <Tag value="2 h" />
+
+[Bartek Szopka: Everything you never wanted to know about JavaScript numbers - JSConf EU 2013 - YouTube](https://www.youtube.com/watch?v=MqHDDtVYJRI)
+
+[IEEE-754 Floating Point representation explained](https://bartaz.github.io/ieee754-visualization/)
+
+## Just JavaScript <Tag value='20 h' />
+
+[Just JavaScript](https://justjavascript.com/)
 
 ## Before <Tag value="100 h" />
 
