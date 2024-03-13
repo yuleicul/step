@@ -1,4 +1,4 @@
-# Fastify <Tag variant='total' value="6.5 h" />
+# Fastify <Tag variant='total' value="7 h" />
 
 ::: details To learn
 
@@ -17,11 +17,11 @@
 
 :::
 
-## 2024-03-13 The hitchhiker's guide to plugins (WIP)
+## 2024-03-13 The hitchhiker's guide to plugins <Tag value='0.5 h' /> (WIP)
 
 [The hitchhiker's guide to plugins](https://fastify.dev/docs/latest/Guides/Plugins-Guide/)
 
-- "Every time you use the `register` API, a new context is created which avoids the negative situations mentioned above."
+- "Every time you use the `register` API, a new context is created ..."
 
 ## 2024-03-12 JWT <Tag value="1 h" />
 
