@@ -2,6 +2,10 @@
 
 ::: details To learn
 
+- kafka redis with fastify
+- [Fastify Technical Principles - YouTube](https://www.youtube.com/watch?v=43X1VqlZTQ8)
+- [azure function nodejs - YouTube](https://www.youtube.com/results?search_query=azure+function+nodejs)
+- [Moving Fastify to Azure Pipelines - BDL2059 - YouTube](https://www.youtube.com/watch?v=HZcJ46pJ0YE)
 - _read [here](https://fastify.dev/docs/latest/Reference/Plugins/#handle-the-scope) to understand how to handle the scope of a plugin_
 - [the hitchhiker's guide to plugins](https://fastify.dev/docs/latest/Guides/Plugins-Guide/)
 - [JSON Schema](https://json-schema.org/)

@@ -6,6 +6,9 @@ Currently reading _Fluent React_ by Tejas Kumar.
 
 ::: details To learn
 
+- [Home v6.22.3 | React Router](https://reactrouter.com/en/main)
+- [Redux - A predictable state container for JavaScript apps. | Redux](https://redux.js.org/)
+- [RTK Query Overview | Redux Toolkit](https://redux-toolkit.js.org/rtk-query/overview)
 - [The Two Reacts — overreacted](https://overreacted.io/the-two-reacts/)
 - [Patterns.dev](https://www.patterns.dev/)
 

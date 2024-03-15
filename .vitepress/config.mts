@@ -1,4 +1,4 @@
-import { defineConfig } from "vitepress"
+import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -39,6 +39,10 @@ export default defineConfig({
             text: "RxJS",
             link: "/content/rxjs",
           },
+          {
+            text: "Azure",
+            link: "/content/azure",
+          },
         ],
       },
       {
@@ -67,4 +71,4 @@ export default defineConfig({
 
     socialLinks: [{ icon: "github", link: "https://github.com/yuleicul" }],
   },
-})
+});
