@@ -1,4 +1,4 @@
-# React <Tag variant='total' value='62 h' />
+# React <Tag variant='total' value='64 h' />
 
 ::: info
 Currently reading _Fluent React_ by Tejas Kumar.
@@ -13,6 +13,119 @@ Currently reading _Fluent React_ by Tejas Kumar.
 - [Patterns.dev](https://www.patterns.dev/)
 
 :::
+
+## 2024-3 Modern Redux <Tag value='2 h' /> (WIP)
+
+Redux has changed a lot. Redux Toolkit (also known as "RTK" for short) is now the official recommended approach for writing Redux logic. Let's relearn Redux.
+
+[Redux Essentials](https://redux.js.org/tutorials/essentials/part-1-overview-concepts)
+
+<!-- https://github.com/markdown-it/markdown-it-container/issues/6#issuecomment-213789283 -->
+
+:::: details
+
+### Part 1: Redux Overview and Concepts
+
+Redux is a library for managing **global** application state:
+
+- Redux is typically used with the **React-Redux** library for integrating Redux and React together
+- **Redux Toolkit** is the recommended way to write Redux logic
+
+Redux terminology:
+
+- _Action_: a plain JavaScript object that has a `type` field
+  ```js
+  const addTodoAction = {
+    type: "todos/todoAdded",
+    payload: "Buy milk",
+  };
+  ```
+- _Action Creator_: a function that creates and returns an _action_ object
+  ```js
+  const addTodo = (text) => {
+    return {
+      type: "todos/todoAdded",
+      payload: text,
+    };
+  };
+  ```
+- _Reducer_: a function that receives the current _state_ and an _action_ object, decides how to update the state if necessary, and returns the new state: `(state, action) => newState`
+  - [Detailed Explanation: Why are they called 'Reducers'?](https://redux.js.org/tutorials/essentials/part-1-overview-concepts#reducers)
+- _Dispatch_: `dispatch` an _action_ to update the _state_
+- _Selector_: a function to extract specific states
+
+  ```js
+  const selectCounterValue = (state) => state.value;
+
+  const currentValue = selectCounterValue(store.getState());
+  console.log(currentValue);
+  // 2
+  ```
+
+Redux uses a "one-way data flow" app structure:
+![Redux data flow](/redux-data-flow.gif)
+
+### Part 2: Redux Toolkit App Structure
+
+```js
+import { configureStore } from "@reduxjs/toolkit";
+import counterReducer from "../features/counter/counterSlice";
+
+export default configureStore({
+  reducer: {
+    counter: counterReducer,
+  },
+});
+```
+
+When we pass in an object like `{counter: counterReducer}`, that says that we want to have a `state.counter` **section** of our Redux state object, and that we want the `counterReducer` function to be **in charge of** deciding if and how to update the `state.counter` section whenever an action is dispatched.
+
+::: info
+When we pass an object of slice reducers to `configureStore`, it passes those to `combineReducers` for us to generate the root reducer. To learn the details, take a look at [Detailed Explanation: Reducers and State Structure](https://redux.js.org/tutorials/essentials/part-2-app-structure#redux-slices)
+:::
+
+**A "slice" is a collection of Redux reducer logic and actions for a single feature in your app**.
+
+```js
+import { createSlice } from "@reduxjs/toolkit";
+
+export const counterSlice = createSlice({
+  name: "counter",
+  initialState: {
+    value: 0,
+  },
+  reducers: {
+    increment: (state) => {
+      // Redux Toolkit allows us to write "mutating" logic in reducers. It
+      // doesn't actually mutate the state because it uses the immer library,
+      // which detects changes to a "draft state" and produces a brand new
+      // immutable state based off those changes
+      state.value += 1;
+    },
+    decrement: (state) => {
+      state.value -= 1;
+    },
+    incrementByAmount: (state, action) => {
+      state.value += action.payload;
+    },
+  },
+});
+
+export const { increment, decrement, incrementByAmount } = counterSlice.actions;
+
+export default counterSlice.reducer;
+```
+
+The `counterSlice` object returned by `createSlice()` has properties:
+
+- `counterSlice.actions`: an object of **action creators**, which are usually called when using `dispatch` or `reducer` function
+- `counterSlice.reducer`: passed to `configureStore` to be in charge of some state section
+
+::: danger
+You can only write "mutating" logic in Redux Toolkit's `createSlice` and `createReducer` because they use Immer inside! If you write mutating logic in reducers without Immer, it will mutate the state and cause bugs!
+:::
+
+::::
 
 ## Before <Tag value='62 h' />
 
