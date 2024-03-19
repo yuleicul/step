@@ -2,13 +2,15 @@
 defineProps({
   value: String,
   variant: String,
-})
+});
 </script>
 
 <template>
-  <div :class="'tag ' + (variant === 'total' ? 'default' : 'outline')">
-    <span v-if="variant !== 'total'">+</span>
-    {{ value }}
+  <div :class="'tag ' + (variant || 'default')" title="Time spent">
+    <span class="undisplayed">(</span>
+    <span v-if="!variant">+</span>
+    <span class="hour">{{ value }}</span>
+    <span class="undisplayed">)</span>
   </div>
 </template>
 
@@ -23,12 +25,23 @@ defineProps({
   border-radius: 8px;
   vertical-align: middle;
 }
-.tag.default {
+.tag.brand {
   background-color: var(--vp-c-brand-1);
   color: var(--vp-c-bg);
 }
-.tag.outline {
+.tag.default {
   border: 1px solid var(--vp-c-divider);
   color: var(--vp-c-text-2);
+}
+.tag.red {
+  background-color: var(--vp-badge-danger-text);
+  color: var(--vp-c-bg);
+}
+.undisplayed {
+  /* Hack: this is for showing on the outline */
+  display: none;
+}
+.hour {
+  margin: 0 3px;
 }
 </style>

@@ -1,4 +1,4 @@
-# Fastify <Tag variant='total' value="7 h" />
+# Fastify <Tag variant='brand' value="7 h" />
 
 ::: details To learn
 
@@ -21,13 +21,17 @@
 
 :::
 
-## 2024-03-13 The hitchhiker's guide to plugins <Tag value='0.5 h' /> (WIP)
+## The hitchhiker's guide to plugins <Tag value='0.5 h' /> <Tag variant="red" value='Draft' />
+
+<Timestamp value="March 13, 2024" />
 
 [The hitchhiker's guide to plugins](https://fastify.dev/docs/latest/Guides/Plugins-Guide/)
 
 - "Every time you use the `register` API, a new context is created ..."
 
-## 2024-03-12 JWT <Tag value="1 h" />
+## JWT <Tag value="1 h" />
+
+<Timestamp value="March 12, 2024" />
 
 [JSON Web Token Introduction - jwt.io](https://jwt.io/introduction)
 
@@ -41,7 +45,9 @@
 
 - "When your authentication server receives an incoming JWT, it uses the incoming JWT's header and payload segments and the shared private key to generate a signature. If the signature matches, then your application knows that the incoming JWT can be trusted."
 
-## 2024-03-07 Encapsulation and breaking it <Tag value="2 h" />
+## Encapsulation and breaking it <Tag value="2 h" />
+
+<Timestamp value="March 7, 2024" />
 
 [Should you contribute to Open Source? - YouTube](https://www.youtube.com/watch?v=Qo8FQapF-nU)
 
@@ -57,7 +63,9 @@
 - Plugin `autoload`
 - Test with `tape`
 
-## 2024-03-05 Getting started <Tag value='3.5 h' />
+## Getting started <Tag value='3.5 h' />
+
+<Timestamp value="March 5, 2024" />
 
 Fastify is a **web framework**. Other than React, Vue, and Svelte those frontend web framework, there are backend web framework, such as Express and Fastify.
 

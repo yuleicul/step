@@ -2,9 +2,11 @@
 outline: deep
 ---
 
-# Cooking <Tag variant="total" value='18 h' />
+# Cooking <Tag variant="brand" value='18 h' />
 
-## 2024-03-09 擂椒茄子皮蛋 <Tag value='0.5 h' />
+## 擂椒茄子皮蛋 <Tag value='0.5 h' />
+
+<Timestamp value="March 9, 2024" />
 
 食材：
 
@@ -26,7 +28,9 @@ outline: deep
 - 蒜不要太多，一两瓣就行
 - 青椒一根就行了，多了很辣
 
-## 2024-03-06 (牛)肉末豆腐烘蛋 <Tag value='0.5 h' />
+## (牛)肉末豆腐烘蛋 <Tag value='0.5 h' />
+
+<Timestamp value="March 6, 2024" />
 
 食材：
 
@@ -46,7 +50,9 @@ outline: deep
 
 - 料汁还是提前准备好，现放很慌乱
 
-## 2024-03-05 茄汁汤面 <Tag value="0.5 h" />
+## 茄汁汤面 <Tag value="0.5 h" />
+
+<Timestamp value="March 5, 2024" />
 
 食材：
 
@@ -63,7 +69,9 @@ outline: deep
 1. 炒：少量油，爆香蒜末，加番茄块，加一勺盐**炒出沙**，加无添加番茄酱，一勺生抽，一勺耗油。加入备肉。
 1. 煮：加水煮开，加意面焖煮 6 分钟，加叶子菜，煮一会儿，撒葱花
 
-## 2024-03-04 滑蛋鸡腿肉 <Tag value="0.5 h" />
+## 滑蛋鸡腿肉 <Tag value="0.5 h" />
+
+<Timestamp value="March 4, 2024" />
 
 食材：
 
@@ -86,7 +94,9 @@ outline: deep
 - 水少了，很干
 - 锅不能太大，不然蛋液淹没不过鸡肉
 
-## 2024-03-01 <Tag value="1 h" />
+## 菠菜汤 & 肉片<Tag value="1 h" />
+
+<Timestamp value="March 1, 2024" />
 
 ### 皮蛋肉末菠菜汤
 

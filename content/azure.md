@@ -1,4 +1,4 @@
-# Azure <Tag variant="total" value="2 h" />
+# Azure <Tag variant="brand" value="2 h" />
 
 ::: details To learn
 
@@ -8,6 +8,8 @@
 :::
 
 ## Getting Started with Azure <Tag value="2 h" />
+
+<Timestamp value="March, 2024" />
 
 [Getting started with Azure - Azure](https://azure.microsoft.com/get-started/on-demand/?OCID=AZ_ODD_RM)
 

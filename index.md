@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Open Sesame!
-      link: /content/react
+      link: /content/javascript
 ---
 
 # Hi there! 👋

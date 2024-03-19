@@ -1,6 +1,8 @@
-# Angular <Tag variant="total" value='5.5 h' />
+# Angular <Tag variant="brand" value='5.5 h' />
 
-## 2024-03-01 Signal <Tag value="1 h" />
+## Signal <Tag value="1 h" />
+
+<Timestamp value="March 1, 2024" />
 
 [Components • Angular](https://angular.dev/guide/components)
 
@@ -32,7 +34,9 @@
 
 :::
 
-## 2024-02-28 Components <Tag value="0.5 h" />
+## Components <Tag value="0.5 h" />
+
+<Timestamp value="January 28, 2024" />
 
 [Components • Angular](https://angular.dev/guide/components)
 
@@ -51,7 +55,9 @@
 
 :::
 
-## 2024-02-27 v17 Tutorial <Tag value="1.5 h" />
+## v17 Tutorial <Tag value="1.5 h" />
+
+<Timestamp value="January 27, 2024" />
 
 [Interactive tutorial for v17](https://angular.dev/tutorials/learn-angular)
 
@@ -89,7 +95,9 @@
 
 :::
 
-## 2024-02-26 Homes tutorial <Tag value="2.5 h" />
+## Homes tutorial <Tag value="2.5 h" />
+
+<Timestamp value="January 26, 2024" />
 
 [First App Tutorial - Angular Homes](https://angular.io/tutorial/first-app)
 

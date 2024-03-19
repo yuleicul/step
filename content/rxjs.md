@@ -1,4 +1,4 @@
-# RxJS <Tag variant="total" value="0 h" />
+# RxJS <Tag variant="brand" value="0 h" />
 
 ::: info
 

@@ -1,4 +1,4 @@
-# JavaScript <Tag variant='total' value='122 h' />
+# JavaScript <Tag variant='brand' value='122 h' />
 
 ::: info
 
@@ -16,13 +16,17 @@ Currently reading _Understand ES6_
 
 :::
 
-## 2024-03-11 IEEE 754 <Tag value="2 h" />
+## IEEE 754 <Tag value="2 h" />
+
+<Timestamp value="March 11, 2024" />
 
 [Bartek Szopka: Everything you never wanted to know about JavaScript numbers - JSConf EU 2013 - YouTube](https://www.youtube.com/watch?v=MqHDDtVYJRI)
 
 [IEEE-754 Floating Point representation explained](https://bartaz.github.io/ieee754-visualization/)
 
 ## Just JavaScript <Tag value='20 h' />
+
+<Timestamp value="June, 2023" />
 
 [Just JavaScript](https://justjavascript.com/)
 

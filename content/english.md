@@ -1,4 +1,4 @@
-# English <Tag variant="total" value="700 h" />
+# English <Tag variant="brand" value="700 h" />
 
 ::: info
 Trying to understand Dan's speech without subtitles.

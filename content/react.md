@@ -1,4 +1,4 @@
-# React <Tag variant='total' value='64 h' />
+# React <Tag variant='brand' value='64 h' />
 
 ::: info
 Currently reading _Fluent React_ by Tejas Kumar.
@@ -14,7 +14,9 @@ Currently reading _Fluent React_ by Tejas Kumar.
 
 :::
 
-## 2024-3 Modern Redux <Tag value='2 h' /> (WIP)
+## Modern Redux <Tag value='2 h' /> <Tag variant="red" value='Draft' />
+
+<Timestamp value="March, 2024" />
 
 Redux has changed a lot. Redux Toolkit (also known as "RTK" for short) is now the official recommended approach for writing Redux logic. Let's relearn Redux.
 
