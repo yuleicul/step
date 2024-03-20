@@ -1,4 +1,4 @@
-# Azure <Tag variant="brand" value="2 h" />
+# Azure <Tag variant="brand" value="4 h" />
 
 ::: details To learn
 
@@ -7,7 +7,17 @@
 
 :::
 
-## Getting Started with Azure <Tag value="2 h" />
+## Microsoft identity JavaScript NodeJS tutorial <Tag value='2 h' /> <Tag variant="red" value="Draft" />
+
+<Timestamp value='March 20, 2024' />
+
+[Azure-Samples/ms-identity-javascript-nodejs-tutorial](https://github.com/Azure-Samples/): A chapterwise tutorial that will take you through the fundamentals of modern authentication with the Microsoft identity platform in Node.js using MSAL Node
+
+::: details
+
+:::
+
+## Getting started with Azure <Tag value="2 h" />
 
 <Timestamp value="March, 2024" />
 
