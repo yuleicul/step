@@ -65,10 +65,19 @@ export default defineConfig({
             text: "Cooking",
             link: "/content/cooking",
           },
+          {
+            text: "Guitar",
+            link: "/content/guitar",
+          },
         ],
       },
     ],
 
     socialLinks: [{ icon: "github", link: "https://github.com/yuleicul" }],
+  },
+  markdown: {
+    image: {
+      lazyLoading: true,
+    },
   },
 });
