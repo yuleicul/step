@@ -28,6 +28,10 @@ export default defineConfig({
             link: "/content/svelte",
           },
           {
+            text: "Remix",
+            link: "/content/remix",
+          },
+          {
             text: "Fastify",
             link: "/content/fastify",
           },
