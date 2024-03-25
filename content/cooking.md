@@ -9,7 +9,7 @@ outline: deep
 <Timestamp value="March 24, 2024" />
 
 ::: info Lucie 大人的评价：
-太好吃了！！！和家里做的一模一样！！
+太好吃了！！！就是这个味道！！
 :::
 
 <img src="/遵义辣子鸡.jpeg" width="300" />

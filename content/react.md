@@ -1,4 +1,4 @@
-# React <Tag variant='brand' value='64 h' />
+# React <Tag variant='brand' value='65 h' />
 
 ::: info
 Currently reading _Fluent React_ by Tejas Kumar.
@@ -6,13 +6,26 @@ Currently reading _Fluent React_ by Tejas Kumar.
 
 ::: details To learn
 
+- [RSC From Scratch. Part 1: Server Components · reactwg/server-components · Discussion #5](https://github.com/reactwg/server-components/discussions/5)
 - [Home v6.22.3 | React Router](https://reactrouter.com/en/main)
 - [Redux - A predictable state container for JavaScript apps. | Redux](https://redux.js.org/)
 - [RTK Query Overview | Redux Toolkit](https://redux-toolkit.js.org/rtk-query/overview)
-- [The Two Reacts — overreacted](https://overreacted.io/the-two-reacts/)
 - [Patterns.dev](https://www.patterns.dev/)
 
 :::
+
+## The Two Reacts <Tag value="1 h" />
+
+<Timestamp value="March 24, 2024" />
+
+[The Two Reacts — overreacted](https://overreacted.io/the-two-reacts/)
+
+> When you build a user interface, you need to be able to respond to at least some interactions with guaranteed low latency and with zero network roundtrips.
+>
+> UI is made of components, but we argued for two very different visions:
+>
+> - `UI = f(state)` where `state` is client-side, and `f` runs on the client. This approach allows writing instantly interactive components like `<Counter />`. (Here, `f` may also run on the server with the initial state to generate HTML.)
+> - `UI = f(data)` where `data` is server-side, and `f` runs on the server only. This approach allows writing data-processing components like `<PostPreview />`. (Here, `f` runs categorically on the server only. Build-time counts as “server”.)
 
 ## Modern Redux <Tag value='2 h' /> <Tag variant="red" value='Draft' />
 
