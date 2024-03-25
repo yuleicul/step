@@ -1,9 +1,17 @@
-# Guitar <Tag variant="brand" value="231 h" />
+# Guitar <Tag variant="brand" value="232 h" />
 
-## Riffing out Harmony Hall <Tag value='1 h' />
+## Here Comes the Sun <Tag value='0.5 h' /> <Tag variant="red" value="In progress" />
 
-<Timestamp value="March 24, 2024" />
+<Timestamp value="March, 2024" />
+
+[The Beatles "Here Comes the Sun" Guitar Lesson (How it's Really Played!)](https://youtu.be/rbXN50g-cts?si=xQEy8LoZ6opkxIcW)
+
+## Riffing out Harmony Hall <Tag value='1.5 h' /> <Tag variant="red" value="In progress" />
+
+<Timestamp value="March, 2024" />
  
+[Harmony Hall on Harmonies in a Hall (Vampire Weekend Cover)](hhttps://youtu.be/cdy84FXlW8M?si=s5w8k39ICcHga-a-)
+
 [Harmony Hall Guitar Lesson with TAB Tutorial - Vampire Weekend - YouTube](https://www.youtube.com/watch?v=lUSDeDJt5u4)
 
 [Harmony Hall - Vampire Weekend - Guitar Lesson - YouTube](https://www.youtube.com/watch?v=nv8ltHkna-Y)
