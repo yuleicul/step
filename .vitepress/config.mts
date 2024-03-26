@@ -32,6 +32,10 @@ export default defineConfig({
             link: "/content/remix",
           },
           {
+            text: "NestJS",
+            link: "/content/nestjs",
+          },
+          {
             text: "Fastify",
             link: "/content/fastify",
           },
