@@ -1,4 +1,10 @@
-# Guitar <Tag variant="brand" value="232 h" />
+# Guitar <Tag variant="brand" value="233 h" />
+
+## 雨上がり <Tag value="0.5 h" /> <Tag variant="red" value="In progress" />
+
+<Timestamp value="March, 2024" />
+
+[一首非常简单的好听的打板指弹曲，《雨上がり》演示+教学](https://www.bilibili.com/video/BV1bt411f7iq)
 
 ## Here Comes the Sun <Tag value='0.5 h' /> <Tag variant="red" value="In progress" />
 
@@ -6,7 +12,7 @@
 
 [The Beatles "Here Comes the Sun" Guitar Lesson (How it's Really Played!)](https://youtu.be/rbXN50g-cts?si=xQEy8LoZ6opkxIcW)
 
-## Riffing out Harmony Hall <Tag value='1.5 h' /> <Tag variant="red" value="In progress" />
+## Riffing out Harmony Hall <Tag value='2 h' /> <Tag variant="red" value="In progress" />
 
 <Timestamp value="March, 2024" />
  
