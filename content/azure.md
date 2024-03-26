@@ -1,4 +1,4 @@
-# Azure <Tag variant="brand" value="4 h" />
+# Azure <Tag variant="brand" value="4.5 h" />
 
 ::: details To learn
 
@@ -7,15 +7,23 @@
 
 :::
 
-## Microsoft identity JavaScript NodeJS tutorial <Tag value='2 h' /> <Tag variant="red" value="Draft" />
+## MSAL Node <Tag value="0 h" /> <Tag variant="red" value="In progress" />
+
+<Timestamp value='March, 2024' />
+
+[microsoft-authentication-library-for-js/lib/msal-node at dev · AzureAD/microsoft-authentication-library-for-js](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-node)
+
+## Azure Active Directory B2C documentation <Tag value="0.5 h" /> <Tag variant="red" value="In progress" />
+
+<Timestamp value='March, 2024' />
+
+[What is Azure Active Directory B2C? | Microsoft Learn](https://learn.microsoft.com/en-us/azure/active-directory-b2c/overview)
+
+## Microsoft identity JavaScript NodeJS tutorial <Tag value='2 h' />
 
 <Timestamp value='March 20, 2024' />
 
-[Azure-Samples/ms-identity-javascript-nodejs-tutorial](https://github.com/Azure-Samples/): A chapterwise tutorial that will take you through the fundamentals of modern authentication with the Microsoft identity platform in Node.js using MSAL Node
-
-::: details
-
-:::
+[AzureAD/microsoft-authentication-library-for-js: Microsoft Authentication Library (MSAL) for JS](https://github.com/AzureAD/microsoft-authentication-library-for-js)
 
 ## Getting started with Azure <Tag value="2 h" />
 
