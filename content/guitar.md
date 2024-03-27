@@ -1,6 +1,6 @@
 # Guitar <Tag variant="brand" value="233 h" />
 
-## 雨上がり <Tag value="0.5 h" /> <Tag variant="red" value="In progress" />
+## 雨上がり <Tag value="1.5 h" /> <Tag variant="red" value="In progress" />
 
 <Timestamp value="March, 2024" />
 

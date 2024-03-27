@@ -2,6 +2,7 @@
 import DefaultTheme from "vitepress/theme";
 import Tag from "../../components/Tag.vue";
 import Timestamp from "../../components/Timestamp.vue";
+import "./custom.css";
 
 /** @type {import('vitepress').Theme} */
 export default {

@@ -82,6 +82,11 @@ export default defineConfig({
     ],
 
     socialLinks: [{ icon: "github", link: "https://github.com/yuleicul" }],
+
+    footer: {
+      message: "Released under the CC BY-NC-SA 4.0 License.",
+      copyright: "Copyright © 2023-present Yulei Chen",
+    },
   },
   markdown: {
     image: {

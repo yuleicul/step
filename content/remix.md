@@ -6,7 +6,7 @@
 
 [Remix Tutorial](https://remix.run/docs/en/main/start/tutorial)
 
-> In the Remix route file convention, . will create a / in the URL and $ makes a segment dynamic.
+> In the Remix route file convention, `.` will create a `/` in the URL and `$` makes a segment dynamic.
 
 ## Quick Start <Tag value="0.5 h" />
 
