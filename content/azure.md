@@ -1,4 +1,4 @@
-# Azure <Tag variant="brand" value="4.5 h" />
+# Azure <Tag variant="brand" value="7 h" />
 
 ::: details To learn
 
@@ -7,11 +7,21 @@
 
 :::
 
-## MSAL Node <Tag value="0 h" /> <Tag variant="red" value="In progress" />
+## MSAL Node <Tag value="2.5 h" /> <Tag variant="red" value="In progress" />
 
 <Timestamp value='March, 2024' />
 
 [microsoft-authentication-library-for-js/lib/msal-node at dev · AzureAD/microsoft-authentication-library-for-js](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-node)
+
+[What's the difference between Confidential and Public clients? - OAuth in Five Minutes - YouTube](https://www.youtube.com/watch?v=5cQNwifDq1U)
+
+> _Client_ = _Application_ > _Resource Owner_ = _User_
+> Confidential Clients can keep a secret, and Public Clients can't. Simply put, Confidential Clients are server-side applications (written in Node, Java, etc.), while Public Clients are client-side applications (written in JavaScript, etc).
+> _PKCE_ (Proof Key for Code Exchange) is an extension to OAuth developed specifically for doing OAuth in Public Clients.
+
+What's the relationship between tenant, subscription, and resource group?
+
+![Azure hierarchy](/azure-hierarchy.png)
 
 ## Azure Active Directory B2C documentation <Tag value="0.5 h" /> <Tag variant="red" value="In progress" />
 
