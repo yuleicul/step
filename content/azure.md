@@ -1,25 +1,66 @@
-# Azure <Tag variant="brand" value="9.5 h" />
+# Azure <Tag variant="brand" value="12 h" />
 
 ::: details To learn
 
 - [Azure functions for developer - LinkedIn](https://www.linkedin.com/learning/azure-functions-for-developers)
+
 - [Set up a sign-up and sign-in flow](https://learn.microsoft.com/en-us/azure/active-directory-b2c/add-sign-up-and-sign-in-policy?pivots=b2c-user-flow)
 
 - OAuth 2.0
 
 - [RFC 7636 - Proof Key for Code Exchange by OAuth Public Clients](https://datatracker.ietf.org/doc/html/rfc7636#section-6.2)
 
-- [microsoft-authentication-library-for-js/lib/msal-browser at dev · AzureAD/microsoft-authentication-library-for-js](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser)
+- [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser)
 
 - [Tutorial: Register a Single-page application with the Microsoft identity platform - Microsoft identity platform | Microsoft Learn](https://learn.microsoft.com/en-us/entra/identity-platform/tutorial-single-page-app-react-register-app)
 
+- [react-router-sample](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/samples/msal-react-samples/react-router-sample)
+
 :::
 
-## MSAL Node <Tag value="5 h" />
+## MSAL React <Tag value="2 h" />
+
+<Timestamp value='April 1, 2024' />
+
+[msal-react](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-react):
+
+::: details Tutorial: MSAL React
+
+[Tutorial: MSAL React](https://learn.microsoft.com/en-us/entra/identity-platform/tutorial-single-page-app-react-register-app)
+
+- `redirectUri` should be configured in Azure Portal application authentication. Be careful choose single-page application for type.
+- All parts of the app that require authentication must be wrapped in the `MsalProvider` component.
+- `useMsal` hook can give us an `instance`, and we can do `loginPopup`, `loginRedirect`, `logoutPopup`, and `logoutRedirect` with it. We can also call `instance.acquireTokenSilent` to get the tokens (`access_token`, `id_token`, `client_info`, `refresh_token`, etc), and use `access_token` to call Microsoft API (e.g Graph API).
+- `useIsAuthenticated` hook gives us a boolean value whether or not a user is currently signed-in.
+
+:::
+
+::: details Getting-started
+
+[msal-react/docs/getting-started.md](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-react/docs/getting-started.md):
+
+- Components `AuthenticatedTemplate` and `UnauthenticatedTemplate` can do the same thing as `useIsAuthenticated` hook does.
+- Components `MsalAuthenticationTemplate` and `useMsalAuthentication` hook can do the same thing as `instance` does.
+- Besides of `instance`, `useMsal` gives us `accounts` for an array of all accounts currently signed in, and an `inProgress` that tells you what msal is currently doing.
+- They recommend that the app calls the `acquireTokenSilent` API on the PublicClientApplication object each time you need an access token to access an API.
+
+:::
+
+Reference:
+
+- [@azure/msal-react - v2.0.3 | Documentation](https://azuread.github.io/microsoft-authentication-library-for-js/ref/modules/_azure_msal_react.html)
+
+Q: what's the difference between various tokens?
+
+- [ ] This version of the library uses the OAuth 2.0 Authorization Code Flow with PKCE. To read more about this protocol, as well as the differences between implicit flow and authorization code flow, see the section in the @azure/msal-browser readme.
+
+## MSAL Node <Tag value="5.5 h" /> <Tag variant="red" value="In progress" />
+
+Question: how to verify token when requesting
 
 <Timestamp value='March, 2024' />
 
-[microsoft-authentication-library-for-js/lib/msal-node at dev · AzureAD/microsoft-authentication-library-for-js](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-node)
+[msal-node](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-node):
 
 1.  [Public and confidential client apps (MSAL) - Microsoft identity platform | Microsoft Learn](https://learn.microsoft.com/en-us/entra/identity-platform/msal-client-applications)
 
@@ -48,7 +89,9 @@
     ::: details Authority in MSAL
     [Authority in MSAL](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-common/docs/authority.md)
 
-    A diagram from my own understanding:
+    Two diagrams from my own understanding:
+
+    ![IdP authority](/authority.png)
 
     ![MSAL endpoint discovery](/msal-endpoint-discovery.png)
 
