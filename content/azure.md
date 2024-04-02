@@ -1,4 +1,4 @@
-# Azure <Tag variant="brand" value="12 h" />
+# Azure <Tag variant="brand" value="13.5 h" />
 
 ::: details To learn
 
@@ -18,7 +18,29 @@
 
 :::
 
-## MSAL React <Tag value="2 h" />
+## Azure Active Directory B2C documentation <Tag value="1.5 h" /> <Tag variant="red" value="In progress" />
+
+<Timestamp value='April 2, 2024' />
+
+[Azure Active Directory B2C documentation](https://learn.microsoft.com/en-us/azure/active-directory-b2c/)
+
+::: details How-to guides: Authenticate and authorize
+
+1. [Register a single-page application in Azure Active Directory B2C](https://learn.microsoft.com/en-us/azure/active-directory-b2c/tutorial-register-spa)
+
+OAuth 2.0 Authorization code flow (with PKCE) allows the application to exchange an authorization code for ID tokens to represent the authenticated user and Access tokens needed to call protected APIs. In addition, it returns Refresh tokens that provide long-term access to resources on behalf of users without requiring interaction with those users.
+
+The implicit grant flow allows the application to get ID and Access tokens. Unlike the authorization code flow, implicit grant flow doesn't return a Refresh token.
+
+2. [Tutorial: Create user flows and custom policies in Azure Active Directory B2C](https://learn.microsoft.com/en-us/azure/active-directory-b2c/tutorial-create-user-flows?pivots=b2c-custom-policy)
+
+In progress
+
+:::
+
+Q: pkce
+
+## MSAL React <Tag value="2 h" /> <Tag variant="red" value="In progress" />
 
 <Timestamp value='April 1, 2024' />
 
@@ -99,12 +121,6 @@ Question: how to verify token when requesting
 
     ![Convergence scenarios native](/convergence-scenarios-native.svg)
     :::
-
-## Azure Active Directory B2C documentation <Tag value="0.5 h" /> <Tag variant="red" value="In progress" />
-
-<Timestamp value='March, 2024' />
-
-[What is Azure Active Directory B2C? | Microsoft Learn](https://learn.microsoft.com/en-us/azure/active-directory-b2c/overview)
 
 ## Microsoft identity JavaScript NodeJS tutorial <Tag value='2 h' />
 
