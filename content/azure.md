@@ -1,4 +1,4 @@
-# Azure <Tag variant="brand" value="13.5 h" />
+# Azure <Tag variant="brand" value="15 h" />
 
 ::: details To learn
 
@@ -18,7 +18,7 @@
 
 :::
 
-## Azure Active Directory B2C documentation <Tag value="1.5 h" /> <Tag variant="red" value="In progress" />
+## Azure Active Directory B2C documentation <Tag value="3 h" /> <Tag variant="red" value="In progress" />
 
 <Timestamp value='April 2, 2024' />
 
@@ -28,13 +28,18 @@
 
 1. [Register a single-page application in Azure Active Directory B2C](https://learn.microsoft.com/en-us/azure/active-directory-b2c/tutorial-register-spa)
 
-OAuth 2.0 Authorization code flow (with PKCE) allows the application to exchange an authorization code for ID tokens to represent the authenticated user and Access tokens needed to call protected APIs. In addition, it returns Refresh tokens that provide long-term access to resources on behalf of users without requiring interaction with those users.
+OAuth 2.0 Authorization code flow (with PKCE) allows the application to exchange an authorization code for **ID tokens to represent the authenticated user and Access tokens needed to call protected APIs**. In addition, it returns **Refresh tokens** that provide long-term access to resources on behalf of users without requiring interaction with those users.
 
-The implicit grant flow allows the application to get ID and Access tokens. Unlike the authorization code flow, implicit grant flow doesn't return a Refresh token.
+The implicit grant flow allows the application to get ID and Access tokens. Unlike the authorization code flow, **implicit grant flow doesn't return a Refresh token**.
 
 2. [Tutorial: Create user flows and custom policies in Azure Active Directory B2C](https://learn.microsoft.com/en-us/azure/active-directory-b2c/tutorial-create-user-flows?pivots=b2c-custom-policy)
 
-In progress
+   1. Create signing key and encryption key under _Identity Experience Framework_ - _Policy Keys_.
+   2. Register two applications that it uses to sign up and sign in users with local accounts: **IdentityExperienceFramework**, a web API, and **ProxyIdentityExperienceFramework**, a native app with delegated permission to the IdentityExperienceFramework app.
+   3. Download policy starter pack and update values of `yourtenant`, `IdentityExperienceFrameworkAppId`, and `ProxyIdentityExperienceFrameworkAppId`.
+   4. Upload policy files in correct order.
+   5. Test with **B2C_1A_signup_signin**. Unfortunately, I got an error:
+      ![b2c login error](/components/b2c-error.png)
 
 :::
 
