@@ -1,4 +1,4 @@
-# Azure <Tag variant="brand" value="15 h" />
+# Azure <Tag variant="brand" value="16 h" />
 
 ::: details To learn
 
@@ -18,7 +18,7 @@
 
 :::
 
-## Azure Active Directory B2C documentation <Tag value="4 h" /> <Tag variant="red" value="In progress" />
+## Azure Active Directory B2C documentation <Tag value="5 h" /> <Tag variant="red" value="In progress" />
 
 <Timestamp value='April 2, 2024' />
 
@@ -26,70 +26,75 @@
 
 ::: details How-to guides: Authenticate and authorize
 
-- [Register a single-page application in Azure Active Directory B2C](https://learn.microsoft.com/en-us/azure/active-directory-b2c/tutorial-register-spa)
+#### [Register a single-page application in Azure Active Directory B2C](https://learn.microsoft.com/en-us/azure/active-directory-b2c/tutorial-register-spa)
 
-  OAuth 2.0 Authorization code flow (with PKCE) allows the application to exchange an authorization code for **ID tokens to represent the authenticated user and Access tokens needed to call protected APIs**. In addition, it returns **Refresh tokens** that provide long-term access to resources on behalf of users without requiring interaction with those users.
+OAuth 2.0 Authorization code flow (with PKCE) allows the application to exchange an authorization code for **ID tokens to represent the authenticated user and Access tokens needed to call protected APIs**. In addition, it returns **Refresh tokens** that provide long-term access to resources on behalf of users without requiring interaction with those users.
 
-  The implicit grant flow allows the application to get ID and Access tokens. Unlike the authorization code flow, **implicit grant flow doesn't return a Refresh token**.
+The implicit grant flow allows the application to get ID and Access tokens. Unlike the authorization code flow, **implicit grant flow doesn't return a Refresh token**.
 
-- [Tutorial: Create user flows and custom policies in Azure Active Directory B2C](https://learn.microsoft.com/en-us/azure/active-directory-b2c/tutorial-create-user-flows?pivots=b2c-custom-policy)
+#### [Tutorial: Create user flows and custom policies in Azure Active Directory B2C](https://learn.microsoft.com/en-us/azure/active-directory-b2c/tutorial-create-user-flows?pivots=b2c-custom-policy)
 
-  1.  Create signing key and encryption key under _Identity Experience Framework_ - _Policy Keys_.
-  2.  Register two applications that it uses to sign up and sign in users with local accounts: **IdentityExperienceFramework**, a web API, and **ProxyIdentityExperienceFramework**, a native app with delegated permission to the IdentityExperienceFramework app.
-  3.  Download policy starter pack and update values of `yourtenant`, `IdentityExperienceFrameworkAppId`, and `ProxyIdentityExperienceFrameworkAppId`.
-  4.  Upload policy files in correct order.
-  5.  Test with **B2C_1A_signup_signin**. Unfortunately, I got an error:
-      ![b2c login error](/b2c-error.png)
-      The problem is that I should have used files inside `/Display Controls Starterpack`, instead of files under the root.
+1.  Create signing key and encryption key under _Identity Experience Framework_ - _Policy Keys_.
+2.  Register two applications that it uses to sign up and sign in users with local accounts: **IdentityExperienceFramework**, a web API, and **ProxyIdentityExperienceFramework**, a native app with delegated permission to the IdentityExperienceFramework app.
+3.  Download policy starter pack and update values of `yourtenant`, `IdentityExperienceFrameworkAppId`, and `ProxyIdentityExperienceFrameworkAppId`.
+4.  Upload policy files in correct order.
+5.  Test with **B2C_1A_signup_signin**. Unfortunately, I got an error:
+    ![b2c login error](/b2c-error.png)
+    The problem is that I should have used files inside `/Display Controls Starterpack`, instead of files under the root.
 
-- [Set up a password reset flow in Azure Active Directory B2C](https://learn.microsoft.com/en-us/azure/active-directory-b2c/add-password-reset-policy?pivots=b2c-custom-policy)
+#### [Set up a password reset flow in Azure Active Directory B2C](https://learn.microsoft.com/en-us/azure/active-directory-b2c/add-password-reset-policy?pivots=b2c-custom-policy)
 
-  1.  Prerequisites: the B2C Users need to have an authentication method specified for self-service password reset. Select the B2C User, in the left menu under _Manage_, select _Authentication methods_, ensure _Authentication contact info_ is set. B2C users created via a SignUp flow will have this set by default. For users created via Azure Portal or by Graph API need to have this set for SSPR to work.
+1.  Prerequisites: the B2C Users need to have an authentication method specified for self-service password reset. Select the B2C User, in the left menu under _Manage_, select _Authentication methods_, ensure _Authentication contact info_ is set. B2C users created via a SignUp flow will have this set by default. For users created via Azure Portal or by Graph API need to have this set for SSPR to work.
 
-  Q: how to make sure the user has authentication contact info??
+Q: how to make sure the user has authentication contact info??
 
 :::
 
 ::: details How-to guides: Customize
 
-- [Write your first Azure Active Directory B2C custom policy - Hello World!](https://learn.microsoft.com/en-us/azure/active-directory-b2c/custom-policies-series-hello-world)
+#### [Write your first Azure Active Directory B2C custom policy - Hello World!](https://learn.microsoft.com/en-us/azure/active-directory-b2c/custom-policies-series-hello-world)
 
-  ```xml
-  <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-  <TrustFrameworkPolicy
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-      xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06"
-      PolicySchemaVersion="0.3.0.0"
-      TenantId="yourtenant.onmicrosoft.com"
-      PolicyId="B2C_1A_ContosoCustomPolicy"
-      PublicPolicyUri="http://yourtenant.onmicrosoft.com/B2C_1A_ContosoCustomPolicy">
+```xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TrustFrameworkPolicy
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06"
+    PolicySchemaVersion="0.3.0.0"
+    TenantId="yourtenant.onmicrosoft.com"
+    PolicyId="B2C_1A_ContosoCustomPolicy"
+    PublicPolicyUri="http://yourtenant.onmicrosoft.com/B2C_1A_ContosoCustomPolicy">
 
-    <BuildingBlocks>
-      <ClaimsSchema>
-        <ClaimType>
-          <!-- To declare a claim. A claim is like a variable. The claim's declaration also shows the claim's data type. -->
-        </ClaimType>
-      </ClaimsSchema>
-    </BuildingBlocks>
+  <BuildingBlocks>
+    <ClaimsSchema>
+      <ClaimType>
+        <!-- To declare a claim. A claim is like a variable. The claim's declaration also shows the claim's data type. -->
+      </ClaimType>
+    </ClaimsSchema>
+  </BuildingBlocks>
 
-    <ClaimsProviders>
-      <!-- Claims Providers Here-->
-    </ClaimsProviders>
+  <ClaimsProviders>
+    <!-- Claims Providers Here-->
+  </ClaimsProviders>
 
-    <UserJourneys>
-      <!-- The user journey specifies the business logic the end user goes through as Azure AD B2C processes a request. -->
-    </UserJourneys>
+  <UserJourneys>
+    <!-- The user journey specifies the business logic the end user goes through as Azure AD B2C processes a request. -->
+  </UserJourneys>
 
-    <RelyingParty>
-        <!--
-            Relying Party Here that's your policy’s entry point
-            Specify the User Journey to execute
-            Specify the claims to include in the token that is returned when the policy runs
-        -->
-    </RelyingParty>
-  </TrustFrameworkPolicy>
-  ```
+  <RelyingParty>
+      <!--
+          Relying Party Here that's your policy’s entry point
+          Specify the User Journey to execute
+          Specify the claims to include in the token that is returned when the policy runs
+      -->
+  </RelyingParty>
+</TrustFrameworkPolicy>
+```
+
+#### [Azure AD B2C Webinar Series: Custom Policies Part 1 - YouTube](https://www.youtube.com/watch?v=I-CtEGQjcic)
+
+_User Flow_ is just built-in policy.
+_Claims_ are just _variables_.
 
 :::
 
