@@ -1,4 +1,4 @@
-# Azure <Tag variant="brand" value="17.5 h" />
+# Azure <Tag variant="brand" value="18.5 h" />
 
 ::: details To learn
 
@@ -18,7 +18,7 @@
 
 :::
 
-## Custom Policy <Tag value="6.5 h" /> <Tag variant="red" value="In progress" />
+## Custom Policy <Tag value="7.5 h" /> <Tag variant="red" value="In progress" />
 
 <Timestamp value='April 2, 2024' />
 
@@ -80,8 +80,6 @@
 - [Set up a password reset flow in Azure Active Directory B2C](https://learn.microsoft.com/en-us/azure/active-directory-b2c/add-password-reset-policy?pivots=b2c-custom-policy)
 
   1.  Prerequisites: the B2C Users need to have an authentication method specified for self-service password reset. Select the B2C User, in the left menu under _Manage_, select _Authentication methods_, ensure _Authentication contact info_ is set. B2C users created via a SignUp flow will have this set by default. For users created via Azure Portal or by Graph API need to have this set for SSPR to work.
-
-  Q: how to make sure the user has authentication contact info??
 
 - [Azure AD B2C Webinar Series: Custom Policies Part 1 - YouTube](https://www.youtube.com/watch?v=I-CtEGQjcic)
 
