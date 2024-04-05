@@ -1,4 +1,4 @@
-# Azure <Tag variant="brand" value="18.5 h" />
+# Azure <Tag variant="brand" value="20 h" />
 
 ::: details To learn
 
@@ -18,7 +18,7 @@
 
 :::
 
-## Custom Policy <Tag value="7.5 h" /> <Tag variant="red" value="In progress" />
+## Custom Policy <Tag value="9 h" /> <Tag variant="red" value="In progress" />
 
 <Timestamp value='April 2, 2024' />
 
@@ -86,6 +86,14 @@
   - _User Flow_ is just built-in policy.
   - _Claims_ are just _variables_.
   - _Technical Profiles_ are just _functions_.
+
+- [Force a password reset after 90 days](https://learn.microsoft.com/en-us/azure/active-directory-b2c/force-password-reset?pivots=b2c-custom-policy#force-a-password-reset-after-90-days)
+
+  - [Install the Microsoft Graph PowerShell SDK](https://learn.microsoft.com/en-us/powershell/microsoftgraph/installation?view=graph-powershell-1.0) in Azure Cloud Shell. (Note that Azure AD Powershell for Graph is deprecated.)
+  - Use [Find-MgGraphPermission]() cmdlet (cmdlets are the native Powershell commands) to check if having the `'Domain.ReadWrite.All'` admin.
+
+But I hit a problem that i don't have the permission to connect graph by scope domain.readwrite.all, but `Find-MgGraphPermission` tells me i have the admin. That's weird.
+To try: `Connect-MgGraph -ClientId <YOUR_NEW_APP_ID> -TenantId <YOUR_TENANT_ID>`. if it's not working, switch to free trial.
 
 Q: pkce
 
