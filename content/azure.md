@@ -1,4 +1,4 @@
-# Azure <Tag variant="brand" value="20 h" />
+# Azure <Tag variant="brand" value="21.5 h" />
 
 ::: details To learn
 
@@ -18,9 +18,22 @@
 
 :::
 
+## MSAL Browser <Tag value="1.5 h" /> <Tag variant="red" value="In progress" />
+
+<Timestamp value='April, 2024' />
+
+- [msal-browser/docs/resources-and-scopes.md](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/resources-and-scopes.md)
+
+  - (todo graph)
+
+- [msal-browser/docs/working-with-b2c.md](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/working-with-b2c.md)
+
+  - **Users cannot obtain tokens for Microsoft APIs (e.g. MS Graph API) using delegated permissions.**
+  - to be continued
+
 ## Custom Policy <Tag value="9 h" /> <Tag variant="red" value="In progress" />
 
-<Timestamp value='April 2, 2024' />
+<Timestamp value='April, 2024' />
 
 - [Register a single-page application in Azure Active Directory B2C](https://learn.microsoft.com/en-us/azure/active-directory-b2c/tutorial-register-spa)
 
@@ -81,16 +94,20 @@
 
   1.  Prerequisites: the B2C Users need to have an authentication method specified for self-service password reset. Select the B2C User, in the left menu under _Manage_, select _Authentication methods_, ensure _Authentication contact info_ is set. B2C users created via a SignUp flow will have this set by default. For users created via Azure Portal or by Graph API need to have this set for SSPR to work.
 
+  - (todo graph)
+
 - [Azure AD B2C Webinar Series: Custom Policies Part 1 - YouTube](https://www.youtube.com/watch?v=I-CtEGQjcic)
 
   - _User Flow_ is just built-in policy.
   - _Claims_ are just _variables_.
   - _Technical Profiles_ are just _functions_.
+  - (todo graph)
 
 - [Force a password reset after 90 days](https://learn.microsoft.com/en-us/azure/active-directory-b2c/force-password-reset?pivots=b2c-custom-policy#force-a-password-reset-after-90-days)
 
   - [Install the Microsoft Graph PowerShell SDK](https://learn.microsoft.com/en-us/powershell/microsoftgraph/installation?view=graph-powershell-1.0) in Azure Cloud Shell. (Note that Azure AD Powershell for Graph is deprecated.)
   - Use [Find-MgGraphPermission]() cmdlet (cmdlets are the native Powershell commands) to check if having the `'Domain.ReadWrite.All'` admin.
+  - (todo graph)
 
 But I hit a problem that i don't have the permission to connect graph by scope domain.readwrite.all, but `Find-MgGraphPermission` tells me i have the admin. That's weird.
 To try: `Connect-MgGraph -ClientId <YOUR_NEW_APP_ID> -TenantId <YOUR_TENANT_ID>`. if it's not working, switch to free trial.
@@ -99,7 +116,7 @@ Q: pkce
 
 ## MSAL React <Tag value="2 h" /> <Tag variant="red" value="In progress" />
 
-<Timestamp value='April 1, 2024' />
+<Timestamp value='April, 2024' />
 
 ::: info Learning materials
 
@@ -127,7 +144,23 @@ Q: what's the difference between various tokens?
 
 - [ ] This version of the library uses the OAuth 2.0 Authorization Code Flow with PKCE. To read more about this protocol, as well as the differences between implicit flow and authorization code flow, see the section in the @azure/msal-browser readme.
 
-## MSAL Node <Tag value="5.5 h" /> <Tag variant="red" value="In progress" />
+## MSAL Common <Tag value="3.5 h" /> <Tag variant="red" value="In progress" />
+
+<Timestamp value='March, 2024' />
+
+- [msal-common/docs/authority.md](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-common/docs/authority.md)
+
+  Two diagrams from my own understanding:
+
+  ![IdP authority](/authority.png)
+
+  ![MSAL endpoint discovery](/msal-endpoint-discovery.png)
+
+  A diagram from the [official document](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow#protocol-details):
+
+  ![Convergence scenarios native](/convergence-scenarios-native.svg)
+
+## MSAL Node <Tag value="2 h" /> <Tag variant="red" value="In progress" />
 
 <Timestamp value='March, 2024' />
 
@@ -150,18 +183,6 @@ Q: what's the difference between various tokens?
 - What's the relationship between tenant, subscription, and resource group?
 
   ![Azure hierarchy](/azure-hierarchy.png)
-
-- [Authority in MSAL](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-common/docs/authority.md)
-
-  Two diagrams from my own understanding:
-
-  ![IdP authority](/authority.png)
-
-  ![MSAL endpoint discovery](/msal-endpoint-discovery.png)
-
-  A diagram from the [official document](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow#protocol-details):
-
-  ![Convergence scenarios native](/convergence-scenarios-native.svg)
 
 ::: info To be continued
 
