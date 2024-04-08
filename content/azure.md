@@ -1,4 +1,4 @@
-# Azure <Tag variant="brand" value="21.5 h" />
+# Azure <Tag variant="brand" value="24.5 h" />
 
 ::: details To learn
 
@@ -18,7 +18,7 @@
 
 :::
 
-## MSAL Browser <Tag value="1.5 h" /> <Tag variant="red" value="In progress" />
+## How to call Microsoft Graph API in B2C app <Tag value="3 h" />
 
 <Timestamp value='April, 2024' />
 
@@ -26,12 +26,26 @@
 
   - (todo graph)
 
+- [MSAL.js for React B2C Sample](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/samples/msal-react-samples/b2c-sample)
+
+  - This sample uses the web API registered on Azure AD B2C to get Microsoft Graph API instead of calling MG API via Application Permission (Maybe the latter way doesn't work...).
+
+- [Add a web API application to your Azure Active Directory B2C tenant](https://learn.microsoft.com/en-us/azure/active-directory-b2c/add-web-api-application?tabs=app-reg-ga)
+
+  - The scope is defined in your expose APIs
+  - (todo graph of front end and backend app communication)
+
 - [msal-browser/docs/working-with-b2c.md](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/working-with-b2c.md)
 
-  - **Users cannot obtain tokens for Microsoft APIs (e.g. MS Graph API) using delegated permissions.**
+  - Users **cannot** obtain tokens for Microsoft APIs (e.g. MS Graph API) using delegated permissions.
+  - Applications can obtain tokens for Microsoft APIs using application permissions (user management scenarios).
   - to be continued
 
-## Custom Policy <Tag value="9 h" /> <Tag variant="red" value="In progress" />
+- [Differences Between Delegated Permissions and Application Permissions Azure AD - YouTube](https://www.youtube.com/watch?v=o37dLssWB5M)
+  - (todo graph)
+  - (to paste configuration in my playground)
+
+## Custom Policy <Tag value="10.5 h" /> <Tag variant="red" value="In progress" />
 
 <Timestamp value='April, 2024' />
 
@@ -108,9 +122,17 @@
   - [Install the Microsoft Graph PowerShell SDK](https://learn.microsoft.com/en-us/powershell/microsoftgraph/installation?view=graph-powershell-1.0) in Azure Cloud Shell. (Note that Azure AD Powershell for Graph is deprecated.)
   - Use [Find-MgGraphPermission]() cmdlet (cmdlets are the native Powershell commands) to check if having the `'Domain.ReadWrite.All'` admin.
   - (todo graph)
+  - (todo Option1: connect with scope - delegated permission)
+  - (todo option2: connect with app secret - app permission)
 
 But I hit a problem that i don't have the permission to connect graph by scope domain.readwrite.all, but `Find-MgGraphPermission` tells me i have the admin. That's weird.
 To try: `Connect-MgGraph -ClientId <YOUR_NEW_APP_ID> -TenantId <YOUR_TENANT_ID>`. if it's not working, switch to free trial.
+
+- (todo Connect-MgGraph with application permission) see above
+
+- [Self-service password reset policies](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sspr-policy#check-the-expiration-policy-for-a-password)
+  - (todo cmdlets to check expiration)
+  - (todo cmdlets to update expiration)
 
 Q: pkce
 
