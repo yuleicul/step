@@ -91,7 +91,7 @@
     - constructor-based DI
 - Pipes
   - Built-in pipes: `DatePipe`, `DecimalPipe`, `CurrencyPipe`, ...
-  - Custom pipes with`@Pipe`
+  - Custom pipes with `@Pipe`
 
 :::
 

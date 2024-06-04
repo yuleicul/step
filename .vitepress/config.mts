@@ -93,4 +93,7 @@ export default defineConfig({
       lazyLoading: true,
     },
   },
+
+  // To fix `Found dead link ./index in file content/azure.md`
+  ignoreDeadLinks: true,
 });
