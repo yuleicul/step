@@ -4,15 +4,11 @@
 
 - [Azure functions for developer - LinkedIn](https://www.linkedin.com/learning/azure-functions-for-developers)
 
-- [Set up a sign-up and sign-in flow](https://learn.microsoft.com/en-us/azure/active-directory-b2c/add-sign-up-and-sign-in-policy?pivots=b2c-user-flow)
-
 - OAuth 2.0
 
 - [RFC 7636 - Proof Key for Code Exchange by OAuth Public Clients](https://datatracker.ietf.org/doc/html/rfc7636#section-6.2)
 
 - [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser)
-
-- [Tutorial: Register a Single-page application with the Microsoft identity platform - Microsoft identity platform | Microsoft Learn](https://learn.microsoft.com/en-us/entra/identity-platform/tutorial-single-page-app-react-register-app)
 
 - [react-router-sample](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/samples/msal-react-samples/react-router-sample)
 
@@ -45,7 +41,7 @@
   - (todo graph)
   - (to paste configuration in my playground)
 
-## Custom Policy <Tag value="10.5 h" /> <Tag variant="red" value="In progress" />
+## Custom Policy <Tag value="10.5 h" />
 
 <Timestamp value='April, 2024' />
 
@@ -106,22 +102,18 @@
 
 - [Set up a password reset flow in Azure Active Directory B2C](https://learn.microsoft.com/en-us/azure/active-directory-b2c/add-password-reset-policy?pivots=b2c-custom-policy)
 
-  1.  Prerequisites: the B2C Users need to have an authentication method specified for self-service password reset. Select the B2C User, in the left menu under _Manage_, select _Authentication methods_, ensure _Authentication contact info_ is set. B2C users created via a SignUp flow will have this set by default. For users created via Azure Portal or by Graph API need to have this set for SSPR to work.
-
-  - (todo graph)
+  Prerequisites: the B2C Users need to have an authentication method specified for self-service password reset. Select the B2C User, in the left menu under _Manage_, select _Authentication methods_, ensure _Authentication contact info_ is set. B2C users created via a SignUp flow will have this set by default. For users created via Azure Portal or by Graph API need to have this set for SSPR to work.
 
 - [Azure AD B2C Webinar Series: Custom Policies Part 1 - YouTube](https://www.youtube.com/watch?v=I-CtEGQjcic)
 
   - _User Flow_ is just built-in policy.
   - _Claims_ are just _variables_.
   - _Technical Profiles_ are just _functions_.
-  - (todo graph)
 
 - [Force a password reset after 90 days](https://learn.microsoft.com/en-us/azure/active-directory-b2c/force-password-reset?pivots=b2c-custom-policy#force-a-password-reset-after-90-days)
 
   - [Install the Microsoft Graph PowerShell SDK](https://learn.microsoft.com/en-us/powershell/microsoftgraph/installation?view=graph-powershell-1.0) in Azure Cloud Shell. (Note that Azure AD Powershell for Graph is deprecated.)
   - Use [Find-MgGraphPermission]() cmdlet (cmdlets are the native Powershell commands) to check if having the `'Domain.ReadWrite.All'` admin.
-  - (todo graph)
   - (todo Option1: connect with scope - delegated permission)
   - (todo option2: connect with app secret - app permission)
 
@@ -133,8 +125,6 @@ To try: `Connect-MgGraph -ClientId <YOUR_NEW_APP_ID> -TenantId <YOUR_TENANT_ID>`
 - [Self-service password reset policies](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sspr-policy#check-the-expiration-policy-for-a-password)
   - (todo cmdlets to check expiration)
   - (todo cmdlets to update expiration)
-
-Q: pkce
 
 ## MSAL React <Tag value="2 h" /> <Tag variant="red" value="In progress" />
 
@@ -164,9 +154,9 @@ Q: pkce
 
 Q: what's the difference between various tokens?
 
-- [ ] This version of the library uses the OAuth 2.0 Authorization Code Flow with PKCE. To read more about this protocol, as well as the differences between implicit flow and authorization code flow, see the section in the @azure/msal-browser readme.
+This version of the library uses the OAuth 2.0 Authorization Code Flow with PKCE. To read more about this protocol, as well as the differences between implicit flow and authorization code flow, see the section in the @azure/msal-browser readme.
 
-## MSAL Common <Tag value="3.5 h" /> <Tag variant="red" value="In progress" />
+## MSAL Common <Tag value="3.5 h" />
 
 <Timestamp value='March, 2024' />
 
@@ -182,7 +172,7 @@ Q: what's the difference between various tokens?
 
   ![Convergence scenarios native](/convergence-scenarios-native.svg)
 
-## MSAL Node <Tag value="2 h" /> <Tag variant="red" value="In progress" />
+## MSAL Node <Tag value="2 h" />
 
 <Timestamp value='March, 2024' />
 
