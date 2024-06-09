@@ -14,12 +14,46 @@ Currently reading _Fluent React_ by Tejas Kumar.
 
 :::
 
-## React Router Tutorial v6.22.3 <Tag value="2 h" /> <Tag variant="red" value="In progress" />
+## React Router Tutorial v6.22.3 <Tag value="3 h" />
+
+<Timestamp value="March, 2024" />
 
 [Tutorial v6.22.3 | React Router](https://reactrouter.com/en/main/start/tutorial)
 
-> A `<button type="button">`, while seemingly redundant, is the HTML way of **preventing** a button from submitting its form.
-> Browsers can serialize forms by the `name` attribute of it's input elements. The name of this input is `q`, that's why the URL has `?q=`. If we named it `search` the URL would be `?search=`. Note that this form is different from the others we've used, it does not have `<form method="post">`. The default `method` is `"get"`. That means when the browser creates the request for the next document, it doesn't put the form data into the request POST body, but into the [`URLSearchParams`][urlsearchparams] of a GET request.
+### About form
+
+A `<button type="button">`, while seemingly redundant, is the HTML way of **preventing** a button from submitting its form.
+
+Browsers can serialize forms by the `name` attribute of it's input elements. The name of this input is `q`, that's why the URL has `?q=`. If we named it `search` the URL would be `?search=`. Note that this form is different from the others we've used, it does not have `<form method="post">`. The default `method` is `"get"`. That means when the browser creates the request for the next document, it doesn't put the form data into the request POST body, but into the [`URLSearchParams`][urlsearchparams] of a GET request.
+
+```js
+export async function action({ request, params }) {
+  const formData = await request.formData();
+  const updates = Object.fromEntries(formData);
+  updates.first; // "Some"
+  updates.last; // "Name"
+  // ...
+}
+```
+
+[`Object.fromEntries`][fromentries] can collect `formData` all into an object. Aside from `action`, none of these APIs we're discussing are provided by React Router: [`request`][request], [`request.formData`][requestformdata], [`Object.fromEntries`][fromentries] are all provided by the web platform.
+
+### Navigation states
+
+```jsx
+<NavLink
+  to={`contacts/${contact.id}`}
+  className={({ isActive, isPending }) =>
+    isActive ? "active" : isPending ? "pending" : ""
+  }
+>
+  Placeholder
+</NavLink>
+```
+
+Use a `NavLink` in the sidebar. Note that we are passing a function to className. When the user is at the URL in the `NavLink`, then `isActive` will be true. When it's about to be active (the data is still loading) then `isPending` will be true.
+
+`useNavigation` to add global pending UI. `useNavigation` returns the current navigation state: it can be one of `"idle" | "submitting" | "loading"`.
 
 ## The Two Reacts <Tag value="1 h" />
 
@@ -27,12 +61,12 @@ Currently reading _Fluent React_ by Tejas Kumar.
 
 [The Two Reacts — overreacted](https://overreacted.io/the-two-reacts/)
 
-> When you build a user interface, you need to be able to respond to at least some interactions with guaranteed low latency and with zero network roundtrips.
->
-> UI is made of components, but we argued for two very different visions:
->
-> - `UI = f(state)` where `state` is client-side, and `f` runs on the client. This approach allows writing instantly interactive components like `<Counter />`. (Here, `f` may also run on the server with the initial state to generate HTML.)
-> - `UI = f(data)` where `data` is server-side, and `f` runs on the server only. This approach allows writing data-processing components like `<PostPreview />`. (Here, `f` runs categorically on the server only. Build-time counts as “server”.)
+When you build a user interface, you need to be able to respond to at least some interactions with guaranteed low latency and with zero network roundtrips.
+
+UI is made of components, but we argued for two very different visions:
+
+- `UI = f(state)` where `state` is client-side, and `f` runs on the client. This approach allows writing instantly interactive components like `<Counter />`. (Here, `f` may also run on the server with the initial state to generate HTML.)
+- `UI = f(data)` where `data` is server-side, and `f` runs on the server only. This approach allows writing data-processing components like `<PostPreview />`. (Here, `f` runs categorically on the server only. Build-time counts as “server”.)
 
 ## Modern Redux <Tag value='2 h' /> <Tag variant="red" value='Draft' />
 
@@ -62,6 +96,9 @@ Redux terminology:
     payload: "Buy milk",
   };
   ```
+
+````
+
 - _Action Creator_: a function that creates and returns an _action_ object
   ```js
   const addTodo = (text) => {
@@ -158,3 +195,10 @@ My React journey started in July 2020. There're some special times spent:
 - [Deconstructing React](https://youtu.be/eTcyOCd6v1c?si=Zis_VAl1pgEWdZhj) by Tejas Kumar - 3 h
 - [Build your own React](https://pomb.us/build-your-own-react/) by Rodrigo Pombo. I followed this article to build [my own React](https://github.com/yuleicul/build-your-own/tree/main/react) for about 10 h.
 - [React mentoring program 2022](https://github.com/yuleicul/react-mentoring-program-2022) with my colleague Addy Zhou, where I learned Redux for the first time. - 24 h
+
+[urlsearchparams]: https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams
+[request]: https://developer.mozilla.org/en-US/docs/Web/API/Request
+[formdata]: https://developer.mozilla.org/en-US/docs/Web/API/FormData
+[fromentries]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries
+[requestformdata]: https://developer.mozilla.org/en-US/docs/Web/API/Request/formData
+````
