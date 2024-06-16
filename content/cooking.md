@@ -8,7 +8,7 @@ outline: deep
 
 <Timestamp value="March 24, 2024" />
 
-::: info Lucie 大人的评价：
+::: info Lucie 的评价：
 太好吃了！！！就是这个味道！！
 :::
 
@@ -33,7 +33,7 @@ outline: deep
 
 <Timestamp value="March 20, 2024" />
 
-::: info Lucie 大人的评价：
+::: info Lucie 的评价：
 我不爱吃脆脆的菜。
 :::
 
@@ -54,7 +54,7 @@ outline: deep
 
 <Timestamp value="March 19, 2024" />
 
-::: info Lucie 大人的评价：
+::: info Lucie 的评价：
 好难吃。
 :::
 
@@ -102,7 +102,7 @@ outline: deep
 
 <Timestamp value="March 9, 2024" />
 
-::: info Lucie 大人的评价：
+::: info Lucie 的评价：
 不喜欢茄子和皮蛋混起来，还是光吃皮蛋比较好吃。
 :::
 
@@ -205,7 +205,7 @@ outline: deep
 
 <Timestamp value="March 1, 2024" />
 
-::: info Lucie 大人的评价：
+::: info Lucie 的评价：
 好好喝！
 :::
 

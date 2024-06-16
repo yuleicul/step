@@ -110,6 +110,9 @@
   - _Claims_ are just _variables_.
   - _Technical Profiles_ are just _functions_.
 
+![custom-policy](/custom-policy.png)
+(My understanding of custom policy.)
+
 - [Force a password reset after 90 days](https://learn.microsoft.com/en-us/azure/active-directory-b2c/force-password-reset?pivots=b2c-custom-policy#force-a-password-reset-after-90-days)
 
   - [Install the Microsoft Graph PowerShell SDK](https://learn.microsoft.com/en-us/powershell/microsoftgraph/installation?view=graph-powershell-1.0) in Azure Cloud Shell. (Note that Azure AD Powershell for Graph is deprecated.)
