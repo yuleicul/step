@@ -24,6 +24,10 @@ export default defineConfig({
             link: "/content/react",
           },
           {
+            text: "Web",
+            link: "/content/web",
+          },
+          {
             text: "Svelte",
             link: "/content/svelte",
           },
@@ -63,6 +67,15 @@ export default defineConfig({
           {
             text: "Cantonese",
             link: "/content/cantonese",
+          },
+        ],
+      },
+      {
+        text: "UX/UI",
+        items: [
+          {
+            text: "Figma",
+            link: "/content/figma",
           },
         ],
       },
